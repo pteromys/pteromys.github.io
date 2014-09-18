@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+<head>
+	<title>requestAnimationFrame test case</title>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<style type="text/css">
+		.indicator { padding: 1em; color: #000; text-align: center; }
+		.future { background: #07f; }
+		.past { background: #f77; }
+	</style>
+	<script type="text/javascript">
+		var nativeRequestAnimFrame =
+			window.requestAnimationFrame ||
+			window.webkitRequestAnimationFrame ||
+			window.mozRequestAnimationFrame ||
+			window.oRequestAnimationFrame ||
+			window.msRequestAnimationFrame ||
+			function (callback, element) {
+				window.setTimeout(function () {
+					return callback((new Date()).getTime() + 16);
+				}, 16);
+			};
+		var now = (window.performance && window.performance.now &&
+			window.performance.now.bind(window.performance)) ||
+			function () { return (new Date()).getTime(); };
+		var fire = function (time) {
+			var t = now();
+			if (time > 1e12) { t = (new Date()).getTime(); }
+			var classname = (time > t) ? 'future' : 'past';
+			document.body.innerHTML =
+				'<div class="indicator ' + classname + '"><b>' +
+				classname + '</b> (now: ' + t + ', scheduled: ' + time + ')' +
+				'</div>';
+		};
+		window.onload = function () {
+			window.setTimeout(function () {
+				nativeRequestAnimFrame(fire);
+			}, 1000);
+		};
+	</script>
+</head>
+<body>
+	<div class="indicator">Wait...</div>
+</body>
+</html>
