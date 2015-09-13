@@ -1,0 +1,14 @@
+{
+	"name": "Reset portrait orientation",
+	"icons": [
+		{
+			"src": "portrait.png",
+			"sizes": "192x192",
+			"type": "image/png",
+			"density": "4.0"
+		}
+	],
+	"start_url": "portrait.html",
+	"display": "standalone",
+	"orientation": "portrait"
+}
