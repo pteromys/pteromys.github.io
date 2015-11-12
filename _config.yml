@@ -1,0 +1,41 @@
+# Site metadata
+title: Andrew Geng
+description: > # ignore until next entry
+  Andrew Geng's homepage.
+# Front matter defaults
+defaults:
+  -
+    scope:
+      path: ""
+    values:
+      title: ""
+      author: "pteromys"
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: "post"
+      schema: "BlogPosting"
+
+# RSS feed requires absolute URLs
+url: "http://pteromys.melonisland.net"
+# For consistency between `jekyll serve` and live version
+# http://jekyllrb.com/docs/github-pages/#project-page-url-structure
+baseurl: ""
+
+# Permalink scheme
+permalink: /:year/:title/
+
+# Redirects
+gems:
+  - jekyll-redirect-from
+
+# Syntax highlighting, for consistency with GitHub pages.
+highlighter: pygments
+kramdown:
+  input: GFM
+  hard_wrap: false
+  entity_output: symbolic
+
+# vim: set et ts=2 sts=2 sw=2:

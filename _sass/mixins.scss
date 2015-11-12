@@ -1,0 +1,15 @@
+@mixin vertical-gradient($prop, $top_to_bottom...) {
+	#{$prop}: -webkit-linear-gradient(270deg, $top_to_bottom);
+	#{$prop}: -moz-linear-gradient(270deg, $top_to_bottom);
+	#{$prop}: linear-gradient(180deg, $top_to_bottom);
+}
+@mixin horizontal-gradient($prop, $left_to_right) {
+	#{$prop}: -webkit-linear-gradient(0deg, $left_to_right);
+	#{$prop}: -moz-linear-gradient(0deg, $left_to_right);
+	#{$prop}: linear-gradient(90deg, $left_to_right);
+}
+@mixin box-sizing($val) {
+	-webkit-box-sizing: $val;
+	-moz-box-sizing: $val;
+	box-sizing: $val;
+}

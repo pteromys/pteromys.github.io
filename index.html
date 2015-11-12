@@ -1,26 +1,24 @@
-<!doctype html>
-<html lang="en">
-<head>
-	<title>pteromys@github</title>
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<style type="text/css">
-		body {
-			background: #9cf;
-			text-align: center;
-		}
-	</style>
-</head>
-<body>
+---
+title: Andrew Geng
+layout: default
+extraheader: in the Cloooooooooud
+localstyles: ["/front.css"]
+---
 
-<h1>Placeholder</h1>
+<ul class="frontnav cloudtheme">
+	<li><a href="{{ site.baseurl }}/w/">
+		<span class="icon">&#x1f5d2;</span> Blog</a></li>
+	<li><a href="https://github.com/pteromys">
+		<span class="icon">&#xf00a;</span> GitHub</a></li>
+	<li><a href="http://math.uchicago.edu/~ageng/">
+		<span class="icon">&#x26bd;</span> Math homepage</a></li>
+</ul>
 
-<p>Are you looking for one of the following?</p>
+<ul class="projectlist cloudtheme">
+	{% for project in site.data.projects limit:300 %}
+		{% unless project.suppress %}
+			{% include project.html project=project %}
+		{% endunless %}
+	{% endfor %}
+</ul>
 
-<p>
-<a href="https://github.com/pteromys">github.com/pteromys</a>
-&bull;
-<a href="w/">Blog</a>
-</p>
-
-</body>
-</html>

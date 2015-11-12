@@ -1,0 +1,11 @@
+---
+layout: html
+---
+
+{% capture extraheader %}
+	{{ page.extraheader }}
+{% endcapture %}
+
+{% include header.html extra=extraheader %}
+
+{{ content }}

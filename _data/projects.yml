@@ -1,0 +1,70 @@
+- name: Hilbert Curve
+  url: /hilbertcurve/
+  thumb: /hilbertcurve/thumb.png
+  tags: ["demo", "math"]
+  desc: >
+      Visualization of a space-filling curve.
+  date: 2015-11-11
+
+- name: Quasicrystals
+  url: /quasi/
+  thumb: /quasi/thumb-2d.png
+  tags: ["demo", "math"]
+  desc: >
+      Regular grids, meet 5-fold rotational symmetry!
+      Explore quasicrystals in 2-D and 3-D.
+  date: 2015-10-30 22:54:25
+
+- name: svgs2ttf
+  url: https://github.com/pteromys/svgs2ttf
+  tags: ["tool"]
+  desc: >
+      Generate (web)fonts from a directory of SVG images.
+  date: 2014-12-04 16:45
+
+- name: Deformation retraction of the plane to a point
+  url: /code/r2.html
+  thumb: /code/r2-thumbnail.png
+  tags: ["demo", "math"]
+  desc: >
+      Suddenly, nothing.
+  date: 2014-02-25 22:22:40
+
+- name: The Hyperbolic Plane
+  url: /hyperbolic/
+  thumb: /hyperbolic/thumb.png
+  tags: ["demo", "math"]
+  desc: >
+      In the hyperbolic plane, a circle's diameter grows exponentially
+      with respect to its radius. Upload a texture and see what it's
+      like to move around in such a world!
+  suppress: true
+
+- name: Complex Functions
+  url: /complex/
+  thumb: /complex/thumbnail.png
+  tags: ["demo", "math"]
+  desc: >
+      Like a vector in the plane, a complex number has a direction
+      (hue) and magnitude (lightness).
+      Graph any complex-to-complex function you can
+      write in JavaScript!
+  date: 2012-03-21 14:54:13
+  suppress: true
+
+- name: Munsell Color Palette
+  url: /munsell/
+  thumb: /munsell/thumb.png
+  tags: ["tool"]
+  desc: >
+      Pick colors from Albert Munsell's
+      perceptually uniform color system.
+  date: 2011-12-23 23:42:08
+
+- name: Molar Mass Calculator
+  url: /code/molarmass.html
+  tags: ["tool"]
+  desc: >
+      Enter a molecular formula and see its molar mass in g/mol.
+  date: 2005-04-21
+

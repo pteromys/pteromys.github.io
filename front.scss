@@ -1,0 +1,87 @@
+---
+---
+
+@import 'mixins';
+
+h1 {
+	font-size: 200%;
+}
+
+#homelink {
+	@media only screen and (min-width: 56em) {
+		margin-top: -1.5em;
+		margin-left: -5em;
+		margin-bottom: -1.5em;
+	}
+	img {
+		width: 6em; height: 6em;
+	}
+}
+
+@media only screen and (min-width: 66em) {
+	body { max-width: 60em; }
+}
+@media only screen and (min-width: 76em) {
+	body { max-width: 70em; }
+}
+
+.frontnav {
+	font-size: 150%;
+	font-family: Essays1743, serif;
+	line-height: 1;
+	list-style-type: none;
+	text-align: center;
+	margin: 0em 0em 0.5em; padding: 0em;
+	li {
+		display: inline-block;
+		margin: 0.25em;
+	}
+	a {
+		display: block;
+		position: relative;
+		text-decoration: none;
+	}
+}
+.frontnav.cloudtheme {
+	li {
+		margin-top: 0.8em;
+	}
+	a {
+		color: #7f7faf;
+		box-shadow: 0em 0.4em 1em -0.6em rgba(0, 0, 31, 0.5);
+		&:hover {
+			color: #6f8fdf;
+			box-shadow: 0em 0.4em 1em -0.6em rgba(0, 0, 31, 1.0);
+		}
+		transition: box-shadow 0.25s, color 0.25s;
+
+		&:before {
+			// Shape this like the top of a cloud
+			content: '';
+			display: block;
+			height: 1.4em;
+			margin: 0em -1em -1.3em;
+			padding: 0em;
+			background-size: 100% 100%;
+			background-image: url('/cloudtop.svg');
+			background-repeat: no-repeat;
+			background-position: bottom;
+			transition: color 0.25s;
+			position: relative;
+			top: -0.6em;
+			z-index: -1;
+		}
+		// Shape this like the bottom of a cloud
+		height: 1.6em;
+		padding: 0em 1em;
+		background-color: #f7f7fb;
+		@include vertical-gradient(background-image, rgba(255, 255, 251, 1), rgba(255, 255, 251, 1) 6.25%, rgba(247, 247, 251, 1) 50%, rgba(239, 239, 255, 1));
+		background-size: 100% 100%;
+		background-repeat: no-repeat;
+		background-position: bottom;
+		border-top-left-radius: 1.5em 0.8em;
+		border-top-right-radius: 1.5em 0.8em;
+		border-bottom-left-radius: 1.5em 0.8em;
+		border-bottom-right-radius: 1.5em 0.8em;
+	}
+}

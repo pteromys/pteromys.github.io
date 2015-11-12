@@ -1,0 +1,13 @@
+<li><a href="{{ include.project.url | escape }}">
+	{% if include.project.thumb %}
+		<img src="{{ include.project.thumb | escape }}" />
+	{% endif %}
+	<h2>{{ include.project.name | escape }}</h2>
+	<div class="projectinfo">
+		{{ include.project.desc | escape }}
+		<ul class="projectmeta">
+			<li>{{ include.project.date | date: '%Y %b %d' }}</li>
+			<li>{{ include.project.tags | join:', ' }}</li>
+		</ul>
+	</div>
+</a></li>
