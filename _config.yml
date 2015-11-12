@@ -10,6 +10,7 @@ defaults:
     values:
       title: ""
       author: "pteromys"
+      themecolor: "#3f7fdf"
   -
     scope:
       path: ""

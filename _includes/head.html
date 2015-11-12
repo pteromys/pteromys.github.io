@@ -4,12 +4,14 @@
 	<meta charset="utf-8" />
 	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<meta name="theme-color" content="{{ page.themecolor }}" />
 
 	<title>{{ page.title }}</title>
 
 	<meta name="description" content="{% if page.description %}{{ page.description }}{% elsif page.excerpt %}{{ page.excerpt | strip_html | replace:newline,' ' | truncate: 160 }}{% else %}{{ site.description }}{% endif %}" />
 
 	<link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/base.css" />
+	<link rel="icon" sizes="192x192" href="{{ site.baseurl }}/img/chibimelon192.png" />
 	<link rel="canonical" href="{{ page.url | replace:'index.html','' | prepend: site.baseurl | prepend: site.url }}" />
 
 	<script crossorigin="anonymous" integrity="sha256-3Jy/GbSLrg0o9y5Z5n1uw0qxZECH7C6OQpVBgNFYa0g=" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
