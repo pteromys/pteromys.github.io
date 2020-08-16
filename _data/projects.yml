@@ -1,3 +1,12 @@
+- name: "Twist 'em up! Turn 'em round!"
+  url: /twistemup/
+  thumb: /twistemup/thumb.png
+  tags: ["demo", "math"]
+  desc: >
+      Untangle this!
+      In memory of John Conway, 1937–2020.
+  date: 2020-08-16
+
 - name: Hilbert Curve
   url: /hilbertcurve/
   thumb: /hilbertcurve/thumb.png
