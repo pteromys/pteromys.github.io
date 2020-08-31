@@ -29,11 +29,11 @@ baseurl: ""
 permalink: /:year/:title/
 
 # Redirects
-gems:
+plugins:
   - jekyll-redirect-from
 
 # Syntax highlighting, for consistency with GitHub pages.
-highlighter: pygments
+highlighter: rouge
 kramdown:
   input: GFM
   hard_wrap: false
