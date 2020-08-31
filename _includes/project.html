@@ -4,7 +4,7 @@
 	{% endif %}
 	<h2>{{ include.project.name | escape }}</h2>
 	<div class="projectinfo">
-		{{ include.project.desc | escape }}
+		{{ include.project.desc | markdownify }}
 		<ul class="projectmeta">
 			<li>{{ include.project.date | date: '%Y %b %d' }}</li>
 			<li>{{ include.project.tags | join:', ' }}</li>

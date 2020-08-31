@@ -191,17 +191,16 @@ body { margin: 0em auto; padding: 1em; }
 	}
 	.projectmeta {
 		clear: right;
-		height: 1.8em;
 		line-height: 1;
 		font-size: 90%;
 		color: #99c;
 		list-style-type: none; margin: 0em; padding: 0em;
-		margin-bottom: -0.5em;
 		li {
 			margin: 0em; padding: 0.5em 0em 0em;
 			&:first-child { float: left; }
 			&:last-child { float: right; }
 		}
+		&:after { content: ""; display: table; clear: both; }  // clearfix
 	}
 }
 .projectlist.cloudtheme {
@@ -267,7 +266,7 @@ body { margin: 0em auto; padding: 1em; }
 	.projectinfo {
 		// Shape this like the bottom of a cloud
 		margin: -1px 0em 0em;
-		padding: 0em 1em 1em;
+		padding: 1px 1em 1em;  // 1px padding-top prevents margin collapse from disconnecting cloud
 		background-color: #f7f7fb;
 		@include vertical-gradient(background-image, rgba(247, 247, 251, 1), rgba(239, 239, 255, 1));
 		background-size: 100% 50%;
@@ -275,9 +274,14 @@ body { margin: 0em auto; padding: 1em; }
 		border-bottom-right-radius: 3em 2em;
 		box-shadow: 0em 0.5em 2em -1em rgba(0, 0, 31, 0.5);
 		transition: box-shadow 0.25s;
+		*:first-child { margin-top: 0em; }
+		*:nth-last-child(2) { margin-bottom: 0em; }
 	}
 	.projectmeta {
-		padding: 0.8em 1em 0em;
+		height: 1em;
+		margin-top: 0.8em;
+		margin-bottom: -0.5em;
+		padding: 0em 1em;
 		li {
 			padding: 0em;
 		}
