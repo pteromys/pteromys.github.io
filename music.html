@@ -1,0 +1,10 @@
+---
+title: Music
+layout: default
+extraheader: there really ought to be more of these and I'm sorry
+localstyles: ["/music.css"]
+---
+
+{% for project in site.data.music %}
+	{% include music.html project=project %}
+{% endfor %}

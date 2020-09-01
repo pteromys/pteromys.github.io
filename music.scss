@@ -1,0 +1,64 @@
+---
+---
+
+.projectcell {
+	display: block;
+	padding: 1em;
+	margin: 1em 0em 0.5em;
+	position: relative; z-index: 0;
+	background: rgba(255, 255, 255, 0.5);
+	box-shadow: 0em 0em 0.5em 0em rgba(255, 255, 255, 0.5);
+	h2 {
+		margin: 0em 0em 0.5em; padding: 0em;
+		border: none;
+	}
+	& > img {
+		float: right;
+		margin-left: 1em;
+		max-width: 6em;
+		border: 1px solid #fff;
+	}
+	.projectmeta {
+		clear: right;
+		float: right;
+		line-height: 1;
+		font-size: 90%;
+		text-align: right;
+		list-style-type: none; margin: 0em; padding: 0em;
+		li {
+			margin: 0em; padding: 0em 0.5em;
+			display: inline-block; vertical-align: middle;
+		}
+	}
+	&:after { content: ""; display: table; clear: both; }  // clearfix
+}
+img.ccbutton {
+	max-width: none;
+}
+audio {
+	width: 100%;
+	border-radius: 1em;
+	color: #000;
+}
+.music-filelist {
+	list-style-type: none; margin: 0em; padding: 0em;
+	& > li {
+		display: inline-block;
+		vertical-align: middle;
+		padding: 0em;
+		margin: 0.25em;
+		& > a:link, & > a:visited, & > a:hover, & > a:active {
+			display: block;
+			color: #003; text-decoration: none;
+			background: rgba(255, 255, 255, 0.5);
+			padding: 0.5em 1em;
+			border-radius: 2em;
+			transition: box-shadow 0.25s, background 0.25s, color 0.25s;
+		}
+		& > a:hover {
+			color: #5f5f7f;
+			background: rgba(255, 255, 255, 0.9);
+			box-shadow: 0em 0em 0.5em 0em #fff;
+		}
+	}
+}

@@ -1,0 +1,75 @@
+- name: Prismatic
+  desc: |
+    Memories of summer animate the promise of each spring.
+  date: 2011-01-27
+  started: 2010-05-01
+  updated: 2011-05-10
+  license: by-nc-sa/3.0/us
+  audio:
+    - title: Recording 2011-01-27 Ogg Vorbis
+      url: prismatic.ogg
+      type: audio/ogg
+    - title: Recording 2011-01-27 MP3
+      url: prismatic.mp3
+      type: audio/mpeg
+  scores:
+    - title: Piano Solo in G
+      url: prismatic.pdf
+
+- name: Stella Nova
+  desc: |
+    In 1572, a star with the brightness of Venus appeared for a few months in
+    the constellation of Cassiopeia. A second one followed in Ophiuchus in
+    1604.
+
+    The title of this piece is from *De nova et nullius aevi memoria prius visa
+    stella* and *De Stella nova in pede Serpentarii*, in which Tycho Brahe and
+    Johannes Kepler used their observations of these "new stars" to lay to rest
+    the illusion of an eternally unchanging celestial sphere. Three centuries
+    onward, their work helped us begin to understand what really makes the
+    stars shine.
+  date: 2008-08-01
+  started: 2005-08-01
+  updated: 2008-08-15
+  license: by-nc-sa/3.0/us
+  audio:
+    - title: Orchestra Ogg Vorbis
+      url: stella-nova-orch.ogg
+      type: audio/ogg
+    - title: Orchestra MP3
+      url: stella-nova-orch.mp3
+      type: audio/mpeg
+    - title: Orchestra Small MP3
+      url: stella-nova-orch-tiny.mp3
+  scores:
+    - title: Piano Solo in E♭ minor
+      url: stella-nova-piano.pdf
+
+- name: Wanderer
+  desc: |
+    Have you ever watched a thistle seed drift across a sunny field? Or tried
+    to follow one?
+
+    Dedicated to Canada/USA Mathcamp, where an early draft was performed in
+    2005.
+  date: 2005-12-27
+  started: 2005-04-01
+  updated: 2008-08-15
+  license: by/3.0/us
+  audio:
+    - title: Quartet Ogg Vorbis
+      url: wanderer-quartet.ogg
+      type: audio/ogg
+    - title: Quartet MP3
+      url: wanderer-quartet.mp3
+      type: audio/mpeg
+    - title: Quartet Small MP3
+      url: wanderer-quartet-small.mp3
+  scores:
+    - title: Piano Solo in C♯
+      url: wanderer-piano.pdf
+    - title: Piano Solo in D
+      url: wanderer-piano-d.pdf
+    - title: Flute Solo and Piano Accompaniment in D
+      url: wanderer-flute.pdf
+

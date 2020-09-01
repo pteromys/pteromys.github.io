@@ -1,0 +1,36 @@
+<section class="projectcell" id="{{ include.project.name | slugify }}">
+
+{% if include.project.thumb %}
+	<img src="{{ include.project.thumb | escape }}" />
+{% endif %}
+<ul class="projectmeta">
+	<li><a rel="license" href="http://creativecommons.org/licenses/{{ include.project.license }}/">
+		<img class="ccbutton" alt="Creative Commons License {{ include.project.license }}" src="http://i.creativecommons.org/l/{{ include.project.license }}/88x31.png" />
+	</a></li>
+	<li>{{ include.project.date | date: '%Y %b %d' }}</li>
+</ul>
+<h2>{{ include.project.name | escape }}</h2>
+<audio controls preload="none">
+	{% for file in include.project.audio %}
+		{% if file.type %}
+			<source src="//www.melonisland.net/music/{{ file.url }}" type="{{ file.type }}" />
+		{% endif %}
+	{% endfor %}
+</audio>
+<div class="projectinfo">
+	{{ include.project.desc | markdownify }}
+</div>
+<h3>Audio files</h3>
+<ul class="music-filelist">
+	{% for file in include.project.audio %}
+		<li><a href="//www.melonisland.net/music/{{ file.url }}">{{ file.title | escape }}</a></li>
+	{% endfor %}
+</ul>
+<h3>Sheet music</h3>
+<ul class="music-filelist">
+	{% for file in include.project.scores %}
+		<li><a href="//www.melonisland.net/music/{{ file.url }}">{{ file.title | escape }}</a></li>
+	{% endfor %}
+</ul>
+
+</section>

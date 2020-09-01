@@ -70,37 +70,6 @@
       perceptually uniform color system.
   date: 2011-12-23 23:42:08
 
-- name: Stella Nova
-  url: /music/stellanova/
-  tags: ["music"]
-  desc: |
-      In 1572, a star with the brightness of Venus appeared in the
-      constellation of Cassiopeia. A second one followed in Ophiuchus in 1604.
-      Both faded away within a few months of being seen, seemingly restoring
-      Heaven to its eternally unchanging state...
-
-      ...but change had been sparked on Earth, where the new stars had caught
-      the attention of the astronomers Tycho Brahe and Johannes Kepler. They
-      recorded their observations for posterity in the form of two books,
-      titled *De nova et nullius aevi memoria prius visa stella* and *De Stella
-      nova in pede Serpentarii*. Three centuries after Cassiopeia changed, the
-      scientists who followed in their footsteps began to grasp the true nature
-      of a "new star" and the frightening power that it unleashed.
-  date: 2008-08-01
-  suppress: true
-
-- name: Wanderer
-  url: /music/wanderer/
-  tags: ["music"]
-  desc: |
-      Have you ever watched a thistle seed drift across a sunny field? Or tried
-      to follow one?
-
-      This piece is dedicated to Canada/USA Mathcamp and was first performed
-      (as an incomplete version) at the end of Mathcamp 2005.
-  date: 2005-12-27
-  suppress: true
-
 - name: Molar Mass Calculator
   url: /code/molarmass.html
   tags: ["tool"]
