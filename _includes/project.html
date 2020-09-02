@@ -1,6 +1,6 @@
 <li><a href="{{ include.project.url | escape }}">
 	{% if include.project.thumb %}
-		<img src="{{ include.project.thumb | escape }}" />
+		<img src="{{ include.project.thumb | escape }}" alt="Preview of {{ include.project.name | escape }}" />
 	{% endif %}
 	<h2>{{ include.project.name | escape }}</h2>
 	<div class="projectinfo">
