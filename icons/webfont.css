@@ -4,7 +4,7 @@
     src: url('blog.eot?#iefix') format('embedded-opentype'),
          url('blog.woff') format('woff'),
          url('blog.ttf') format('truetype'),
-         url('blog.svg#NutIcons') format('svg');
+         url('blog.svg#NutIcons-blog-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }

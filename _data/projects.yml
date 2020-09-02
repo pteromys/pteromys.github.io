@@ -24,6 +24,14 @@
       Explore quasicrystals in 2-D and 3-D.
   date: 2015-10-30 22:54:25
 
+- name: Old math homepage
+  url: /math-home/
+  tags: ["math"]
+  desc: >
+      Archive of my website during grad school.
+      Free to reuse/adapt.
+  date: 2015-01-20
+
 - name: svgs2ttf
   url: https://github.com/pteromys/svgs2ttf
   tags: ["tool"]
