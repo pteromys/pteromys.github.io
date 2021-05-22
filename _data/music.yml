@@ -54,7 +54,7 @@
     2005.
   date: 2005-12-27
   started: 2005-04-01
-  updated: 2008-08-15
+  updated: 2021-05-21
   license: by/3.0/us
   audio:
     - title: Quartet Ogg Vorbis
@@ -68,8 +68,12 @@
   scores:
     - title: Piano Solo in C♯
       url: wanderer-piano.pdf
+    - title: Piano Solo in C♯ (2021 edition)
+      url: wanderer-piano-2021.pdf
     - title: Piano Solo in D
       url: wanderer-piano-d.pdf
+    - title: Piano Solo lilypond source
+      url: //github.com/pteromys/wanderer-piano
     - title: Flute Solo and Piano Accompaniment in D
       url: wanderer-flute.pdf
 

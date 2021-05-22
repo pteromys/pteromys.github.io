@@ -23,13 +23,15 @@
 <h3>Audio files</h3>
 <ul class="music-filelist">
 	{% for file in include.project.audio %}
-		<li><a href="//www.melonisland.net/music/{{ file.url }}">{{ file.title | escape }}</a></li>
+		{% capture front %}{{ file.url | slice: 0, 2 }}{% endcapture %}
+		<li><a href="{% unless front == "//" %}//www.melonisland.net/music/{% endunless %}{{ file.url }}">{{ file.title | escape }}</a></li>
 	{% endfor %}
 </ul>
 <h3>Sheet music</h3>
 <ul class="music-filelist">
 	{% for file in include.project.scores %}
-		<li><a href="//www.melonisland.net/music/{{ file.url }}">{{ file.title | escape }}</a></li>
+		{% capture front %}{{ file.url | slice: 0, 2 }}{% endcapture %}
+		<li><a href="{% unless front == "//" %}//www.melonisland.net/music/{% endunless %}{{ file.url }}">{{ file.title | escape }}</a></li>
 	{% endfor %}
 </ul>
 
