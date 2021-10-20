@@ -1,3 +1,12 @@
+- name: "Cyber Ad Generator"
+  url: /cyber/
+  thumb: /cyber/thumb.jpg
+  tags: ["tool"]
+  desc: >
+      Generate ads about retraining in cyber.
+      Irony is optional.
+  date: 2021-10-19
+
 - name: "Twist 'em up! Turn 'em 'round!"
   url: /twistemup/
   thumb: /twistemup/thumb.png
