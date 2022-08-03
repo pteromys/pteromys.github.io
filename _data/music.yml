@@ -15,6 +15,10 @@
   scores:
     - title: Piano Solo in G
       url: prismatic.pdf
+    - title: Piano Solo in G (2022 edition)
+      url: prismatic-2022.pdf
+    - title: Piano Solo lilypond source
+      url: //github.com/pteromys/prismatic
 
 - name: Stella Nova
   desc: |
