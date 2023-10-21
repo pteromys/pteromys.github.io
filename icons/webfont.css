@@ -1,10 +1,10 @@
 @font-face {
     font-family: 'NutIcons-blog';
-    src: url('blog.eot');
-    src: url('blog.eot?#iefix') format('embedded-opentype'),
-         url('blog.woff') format('woff'),
-         url('blog.ttf') format('truetype'),
-         url('blog.svg#NutIcons-blog-Regular') format('svg');
+    src: url('blog2.eot');
+    src: url('blog2.eot?#iefix') format('embedded-opentype'),
+         url('blog2.woff') format('woff'),
+         url('blog2.ttf') format('truetype'),
+         url('blog2.svg#NutIcons-blog-Regular') format('svg');
     font-weight: normal;
     font-style: normal;
 }

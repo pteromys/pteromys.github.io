@@ -13,7 +13,7 @@
       url: prismatic.mp3
       type: audio/mpeg
   scores:
-    - title: Piano Solo in G
+    - title: Piano Solo in G (2011 edition)
       url: prismatic.pdf
     - title: Piano Solo in G (2022 edition)
       url: prismatic-2022.pdf
@@ -70,14 +70,14 @@
     - title: Quartet Small MP3
       url: wanderer-quartet-small.mp3
   scores:
-    - title: Piano Solo in C♯
+    - title: Piano Solo in C♯ (2008 edition)
       url: wanderer-piano.pdf
     - title: Piano Solo in C♯ (2021 edition)
       url: wanderer-piano-2021.pdf
-    - title: Piano Solo in D
+    - title: Piano Solo in D (2008)
       url: wanderer-piano-d.pdf
     - title: Piano Solo lilypond source
       url: //github.com/pteromys/wanderer-piano
-    - title: Flute Solo and Piano Accompaniment in D
+    - title: Flute Solo and Piano Accompaniment in D (2008)
       url: wanderer-flute.pdf
 

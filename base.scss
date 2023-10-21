@@ -24,13 +24,37 @@ a:active { color: #ff9f00; }
 		top: 0px; bottom: 0px; left: 0px; right: 0px;
 		z-index: -1;
 		@include vertical-gradient(background-image, rgba(63, 127, 255, 1), rgba(159, 239, 255, 1));
+		background-image: url('{{ site.baseurl }}/img/clouds.svg'), linear-gradient(180deg, rgba(63, 127, 255, 1), rgba(159, 239, 255, 1));
 		background-size: 100% 100%;
 		background-size: cover;
 		background-repeat: no-repeat;
 	}
 	body {
 		box-shadow: 0em 0em 2em 0em rgba(255, 255, 255, 0.5);
-		background-color: rgba(255, 255, 255, 0.5);
+		background-color: rgba(223, 231, 247, 0.75);
+	}
+}
+@media (prefers-color-scheme: dark) {
+	h1 { color: #efefff; }
+	h2, h4, h6 { color: #8f8fbf; border-color: rgba(127, 127, 159, 0.5); }
+	h3, h5 { color: #bfbfef; }
+	.extraheader { color: #9f9f9f; }
+	html { color: #ffffff; background: #000000; }
+	body { color: #ffffff; background: #0f0f1f; }
+	a:link { color: #3fbfff; }
+	a:visited { color: #df8fff; }
+	a:hover { color: #7fefff; }
+	a:active { color: #ffcf5f; }
+	.post-metadata, .post-date { color: #7f7f8f; }
+	@media only screen {
+		body::before {
+			@include vertical-gradient(background-image, rgba(0, 0, 0, 1), rgba(0, 31, 63, 1));
+			background-image: url('{{ site.baseurl }}/img/clouds-dark.svg'), url('{{ site.baseurl }}/img/stars.webp');
+		}
+		body {
+			box-shadow: 0em 0em 2em 0em rgba(15, 47, 79, 1);
+			background-color: rgba(31, 47, 79, 0.5);
+		}
 	}
 }
 
@@ -121,10 +145,17 @@ body { margin: 0em auto; padding: 1em; }
 		padding: 0.25em;
 		opacity: 0.8;
 		color: #fff;
-		transition: opacity 0.2s, text-shadow 0.2s;
+		transition: color 0.2s, opacity 0.2s, text-shadow 0.2s;
 		&:hover, &:active {
 			opacity: 1.0;
 			text-shadow: 0em 0em 0.2em #fff;
+		}
+		@media (prefers-color-scheme: dark) {
+			color: #9f9fcf;
+			opacity: 1.0;
+			&:hover, &:active {
+				color: #ffffff;
+			}
 		}
 	}
 }
@@ -158,14 +189,27 @@ body { margin: 0em auto; padding: 1em; }
 	a:link, a:visited, a:hover, a:active {
 		display: block;
 		color: #000; text-decoration: none;
-		background: rgba(255, 255, 255, 0.7);
+		background: rgba(255, 255, 255, 0.5);
 		padding: 1em;
 		transition: box-shadow 0.25s, background 0.25s, color 0.25s;
+		@media (prefers-color-scheme: dark) {
+			color: #ffffff;
+			background: rgba(31, 47, 79, 0.7);
+		}
 	}
 	a:hover {
 		color: #5f5f7f;
 		background: rgba(255, 255, 255, 0.9);
 		box-shadow: 0em 0em 0.5em 0em #fff;
+		@media (prefers-color-scheme: dark) {
+			color: #ffffff;
+			background: rgba(63, 63, 95, 0.9);
+			box-shadow: 0em 0em 0.5em 0em rgba(255, 255, 255, 0.25);
+			h2 {
+				color: #dfdfff;
+				text-shadow: 0em 0em 0.2em rgba(255, 255, 255, 0.5);
+			}
+		}
 	}
 	li {
 		display: block;
@@ -177,7 +221,10 @@ body { margin: 0em auto; padding: 1em; }
 		float: right;
 		margin-left: 1em;
 		max-width: 6em;
-		border: 1px solid #fff;
+		border: 1px solid #ffffff;
+		@media (prefers-color-scheme: dark) {
+			border: 1px solid #3f4f6f;
+		}
 	}
 	@media only screen and (min-width: 25em) {
 		img { max-width: 10em; }
@@ -185,6 +232,7 @@ body { margin: 0em auto; padding: 1em; }
 	h2 {
 		margin: 0em 0em 0.5em; padding: 0em;
 		border: none;
+		transition: box-shadow 0.25s, color 0.25s;
 	}
 	.projectinfo {
 		margin: 0em;
@@ -210,10 +258,12 @@ body { margin: 0em auto; padding: 1em; }
 	column-width: 15em;
 	text-align: center;
 	a:link, a:visited, a:hover, a:active {
-		//width: auto;
 		padding: 0em;
 		background: transparent;
 		box-shadow: none;
+		@media (prefers-color-scheme: dark) {
+			color: #dfdfdf;
+		}
 	}
 	a:hover {
 		img {
@@ -225,6 +275,17 @@ body { margin: 0em auto; padding: 1em; }
 		}
 		.projectinfo {
 			box-shadow: 0em 0.5em 2em -1em rgba(0, 0, 31, 1.0);
+		}
+		@media (prefers-color-scheme: dark) {
+			color: #ffffdf;
+			img {
+				border-color: #4f4f6f;
+				box-shadow: 0em 0em 0.5em 0em rgba(255, 255, 255, 0.25);
+			}
+			h2 {
+				color: #dfdfff;
+				text-shadow: 0em 0em 0.2em rgba(255, 255, 255, 0.5);
+			}
 		}
 	}
 	li {
@@ -238,15 +299,16 @@ body { margin: 0em auto; padding: 1em; }
 		margin: 0em auto -2.1em;
 		max-width: 90%;
 		max-height: 20em;
-		//border-radius: 50%;
-		//border-bottom-left-radius: 2em 50%;
-		//border-bottom-right-radius: 2em 50%;
 		top: 0.5em;
 		position: relative;
 		z-index: 0;
 		border: 0.5em solid rgba(255, 255, 255, 0.5);
 		background-color: rgba(255, 255, 255, 0.25);
 		transition: top 0.25s, border-color 0.25s;
+		@media (prefers-color-scheme: dark) {
+			border-color: rgba(31, 47, 79, 0.5);
+			background-color: rgba(31, 47, 79, 0.5);
+		}
 	}
 	h2, .projectinfo {
 		margin-top: 0.5em;
@@ -261,8 +323,12 @@ body { margin: 0em auto; padding: 1em; }
 		padding: 1em 1em 0.25em;
 		background-size: 100% 100%;
 		background-image: url('{{ site.baseurl }}/img/cloudtop.svg');
-		transition: color 0.25s;
+		transition: color 0.25s, text-shadow 0.25s;
 		z-index: 1;
+		@media (prefers-color-scheme: dark) {
+			color: #9f9fcf;
+			background-image: url('{{ site.baseurl }}/img/cloudtop-dark.svg');
+		}
 	}
 	.projectinfo {
 		// Shape this like the bottom of a cloud
@@ -277,6 +343,10 @@ body { margin: 0em auto; padding: 1em; }
 		transition: box-shadow 0.25s;
 		*:first-child { margin-top: 0em; }
 		*:nth-last-child(2) { margin-bottom: 0em; }
+		@media (prefers-color-scheme: dark) {
+			background-color: #273757;
+			@include vertical-gradient(background-image, rgba(39, 55, 87, 1), rgba(31, 47, 79, 1));
+		}
 	}
 	.projectmeta {
 		height: 1em;
