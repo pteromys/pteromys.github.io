@@ -1,3 +1,19 @@
+- name: "Neural network toy"
+  url: /neuralnets/
+  thumb: /neuralnets/preview2d.jpg
+  tags: ["demo", "math"]
+  desc: >
+      Watch a small neural net learn to approximate an image.
+  date: 2023-12-28
+
+- name: "micpeek"
+  url: https://github.com/pteromys/micpeek
+  thumb: /img/micpeek-thumb.png
+  tags: ["tool"]
+  desc: >
+      Plot a live audio spectrum in the terminal.
+  date: 2023-10-15
+
 - name: "Cyber Ad Generator"
   url: /cyber/
   thumb: /cyber/thumb.jpg
@@ -43,6 +59,7 @@
 
 - name: svgs2ttf
   url: https://github.com/pteromys/svgs2ttf
+  thumb: /img/svgs2ttf-thumb.png
   tags: ["tool"]
   desc: >
       Generate (web)fonts from a directory of SVG images.
