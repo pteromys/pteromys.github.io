@@ -1,3 +1,11 @@
+- name: "dook"
+  url: https://github.com/pteromys/dook
+  thumb: /img/dook-thumb.png
+  tags: ["tool"]
+  desc: >
+      Look up definitions in your code.
+  date: 2024-06-30
+
 - name: "Neural network toy"
   url: /neuralnets/
   thumb: /neuralnets/preview2d.jpg
